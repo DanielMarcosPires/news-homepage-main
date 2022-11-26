@@ -1,0 +1,17 @@
+.header{
+    padding: 8px 0;
+}
+.barra__lateral{
+    display: flex;
+    flex-direction: column;
+}
+.lateral__link{
+    font-size: 1.2em;
+    margin: 8px 3px;
+}
+.lateral__link i{
+    margin: 0 8px;
+}
+.menu--icone{
+    font-size: 1.2em;
+}

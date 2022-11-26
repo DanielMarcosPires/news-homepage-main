@@ -1,0 +1,11 @@
+@import url('../../style/header/style.css');
+@import url('../../style/main/images/style.css');
+@import url('../../style/main/article/style.css');
+a{
+    color: var(--preto);
+    text-decoration: none;
+}
+:root{
+    --preto:#000;
+    --vermelho:#f15d53;
+}

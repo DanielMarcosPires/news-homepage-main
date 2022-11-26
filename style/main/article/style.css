@@ -1,0 +1,16 @@
+.artigo{
+    margin: 0 auto;
+    width: 95%;
+}
+.artigo__titulo{
+    font-size: 40px;
+    font-weight: bold;
+}
+.artigo__texto{
+    color: #00000098;
+}
+.artigo__link{
+    background: var(--vermelho);
+    color: #fff;
+    padding: 1em 8px;
+}
