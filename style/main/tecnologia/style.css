@@ -1,0 +1,9 @@
+.tecnologia__item{
+    display: flex;
+    margin: 1.2em 0;
+    padding: 5px;
+}
+.tecnologia__imagem{
+    padding: 8px;
+    width: 150px;
+}

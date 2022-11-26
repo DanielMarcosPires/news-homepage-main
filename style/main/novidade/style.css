@@ -1,0 +1,20 @@
+.novidade{
+    padding: 8px;
+}
+.navidade__card{
+    background: var(--preto--secundario);
+    padding: 5px 1em;
+}
+.novidade__titulo--principal{
+    color: var(--ouro);
+}
+.novidade__titulo{
+    color: #fff;
+}
+.novidade__texto{
+    color: var(--fonteTransparente);
+}
+.novidade__item{
+    border-bottom: solid 1px;
+    margin: 4px 0;
+}

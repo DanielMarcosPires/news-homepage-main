@@ -1,11 +1,23 @@
 @import url('../../style/header/style.css');
 @import url('../../style/main/images/style.css');
 @import url('../../style/main/article/style.css');
+@import url('../../style/main/novidade/style.css');
+@import url('../../style/main/tecnologia/style.css');
 a{
     color: var(--preto);
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
 :root{
     --preto:#000;
+    --preto--secundario:#00001a;
     --vermelho:#f15d53;
+    --ouro:#f0a85c;
+
+    --corDafonte:#fff;
+    --fonteTransparente:#ffffff95;
+
+    --divisao:1.5;
 }

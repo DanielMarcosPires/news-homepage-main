@@ -10,7 +10,15 @@
     color: #00000098;
 }
 .artigo__link{
+    display: inline-block;
     background: var(--vermelho);
+    border-radius: 20px;
     color: #fff;
-    padding: 1em 8px;
+    font-size: 20px;
+    margin: 8px 0;
+    padding: 1em 2em;
+}
+.artigo__link--hover:hover{
+    background: var(--preto);
+    color: #fff;
 }
