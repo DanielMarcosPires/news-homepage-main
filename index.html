@@ -15,114 +15,137 @@
           <a class="navbar-brand" href="#">
             <img src="assets/images/logo.svg" alt="Home button">
           </a>
-         
-          <button class="btn btn-primary mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <i class="fa-solid fa-bars menu--icone"></i>
-          </button>
-
-          <div class="offcanvas offcanvas-end mobile" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <h3 class="menu" id="offcanvasRightLabel">Menu</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <nav class=" barra__lateral--desktop">
+            <a class="lateral__link--desktop" href="#">
+              Home
+            </a>
+            <a class="lateral__link--desktop" href="#">
+              New
+            </a>
+            <a class="lateral__link--desktop" href="#">
+              Popular
+            </a>
+            <a class="lateral__link--desktop" href="#">
+             Trending
+            </a>
+            <a class="lateral__link--desktop" href="#">Categories</a>
+          </nav>
+          <div class="barra__lateral--mobile">
+            <button class="btn btn-primary mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i class="fa-solid fa-bars menu--icone"></i>
+            </button>
+  
+            <div class="offcanvas offcanvas-end mobile" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h3 class="menu" id="offcanvasRightLabel">Menu</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <nav class="offcanvas-body barra__lateral">
+                <a class="lateral__link" href="#">
+                  <i class="fa-solid fa-house"></i>  Home
+                </a>
+                <a class="lateral__link" href="#">
+                  <i class="fa-solid fa-star"></i>New
+                </a>
+                <a class="lateral__link" href="#">
+                  <i class="fa-solid fa-user"></i>Popular
+                </a>
+                <a class="lateral__link" href="#">
+                  <i class="fa-brands fa-wpforms"></i>Trending
+                </a>
+                <a class="lateral__link" href="#">Categories</a>
+              </nav>
             </div>
-            <nav class="offcanvas-body barra__lateral">
-              <a class="lateral__link" href="#">
-                <i class="fa-solid fa-house"></i>  Home
-              </a>
-              <a class="lateral__link" href="#">
-                <i class="fa-solid fa-star"></i>New
-              </a>
-              <a class="lateral__link" href="#">
-                <i class="fa-solid fa-user"></i>Popular
-              </a>
-              <a class="lateral__link" href="#">
-                <i class="fa-brands fa-wpforms"></i>Trending
-              </a>
-              <a class="lateral__link" href="#">Categories</a>
-            </nav>
+
           </div>
         </div>
     </section>
   </header>
   <main>
-    <picture>
-      <source media="(min-width:500px)" srcset="assets/images/imagem--desktop.jpg">
-      <img class="image--mobile" src="assets/images/imagem--celular.jpg" alt>
-    </picture>
-    <article class="artigo" tabindex="0">
-      <h1 class="artigo__titulo">The bright Future Of web 3.0?</h1>
-      <p class="artigo__texto">
-        We dive into the next evolution of the web that claims to put the power
-        of the plataforms back into the hands of the peaple. But is it reality fulfilling its promises.
-      </p>
-      <a class="artigo__link artigo__link--hover" href="#" tabindex="2">Read more</a>
-    </article>
-    <section class="novidade" tabindex="1">
-      <div class="navidade__card">
-        <h2 class="novidade__titulo--principal">New</h2>
-        <ul>
-          <li class="novidade__item">
-            <h3 class="novidade__titulo">Hydrogen VS Eletric Cars</h3>
-            <p class="novidade__texto">
-              Will hydrogen-fueled cars ever catch up to EVs?
-            </p>
+    <div class="main__grid">
+      <picture class="picture">
+        <source media="(min-width:500px)" srcset="assets/images/imagem--desktop.jpg">
+        <img class="image--mobile" src="assets/images/imagem--celular.jpg" alt>
+      </picture>
+      <article class="artigo" tabindex="0">
+        <h1 class="artigo__titulo">The bright Future Of web 3.0?</h1>
+        <div class="grid__desktop--ajuste">
+          <p class="artigo__texto">
+            We dive into the next evolution of the web that claims to put the power
+            of the plataforms back into the hands of the peaple. But is it reality fulfilling its promises.
+          </p>
+          <a class="artigo__link artigo__link--hover" href="#" tabindex="2">Read more</a>
+        </div>
+      </article>
+      <section class="novidade" tabindex="1">
+        <div class="navidade__card">
+          <h2 class="novidade__titulo--principal">New</h2>
+          <ul>
+            <li class="novidade__item">
+              <h3 class="novidade__titulo">Hydrogen VS Eletric Cars</h3>
+              <p class="novidade__texto">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </li>
+            <li class="novidade__item">
+              <h3 class="novidade__titulo">The Downsides of AI Artistry</h3>
+              <p class="novidade__texto">
+                What are the possible adverse effects of on-demand AI image generations?
+              </p>
+            </li>
+            <li class="novidade__item">
+              <h3 class="novidade__titulo">Is VC funding Drying Up?</h3>
+              <p class="novidade__texto">
+                Private funding by VC firms is down 50%
+                YOY. We take a look at what that means.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="tecnologia" tabindex="2">
+        <ul class="tecnologia__lista" >
+          <li class="tecnologia__item">
+            <img class="tecnologia__imagem" src="assets/images/image-retro-pcs.jpg" alt>
+            <div>
+              <h3>Reviving Retro PCs</h3>
+              <p class="tecnologia__texto">
+                What happens when old PCs
+                are given modern upgrades?
+              </p>
+            </div>
+  
           </li>
-          <li class="novidade__item">
-            <h3 class="novidade__titulo">The Downsides of AI Artistry</h3>
-            <p class="novidade__texto">
-              What are the possible adverse effects of on-demand AI image generations?
-            </p>
+          <li class="tecnologia__item">
+            <img class="tecnologia__imagem" src="assets/images/image-top-laptops.jpg" alt>
+            <div>
+              <h3>Top 10 Laptops of 2022</h3>
+              <p class="tecnologia__texto">
+                Our beast picks for various needs and budgets
+              </p>
+            </div>
           </li>
-          <li class="novidade__item">
-            <h3 class="novidade__titulo">Is VC funding Drying Up?</h3>
-            <p class="novidade__texto">
-              Private funding by VC firms is down 50%
-              YOY. We take a look at what that means.
-            </p>
+          <li class="tecnologia__item">
+            <img class="tecnologia__imagem" src="assets/images/image-gaming-growth.jpg" alt>
+            <div>
+              <h3>The Growth of Gaming</h3>
+              <p class="tecnologia__texto">
+                How the pandemic has sparked fresh opportunities
+              </p>
+            </div>
           </li>
         </ul>
-      </div>
-    </section>
-    <section class="tecnologia" tabindex="2">
-      <ul class="tecnologia__lista" >
-        <li class="tecnologia__item">
-          <img class="tecnologia__imagem" src="assets/images/image-retro-pcs.jpg" alt>
-          <div>
-            <h3>Reviving Retro PCs</h3>
-            <p class="tecnologia__texto">
-              What happens when old PCs
-              are given modern upgrades?
-            </p>
-          </div>
-
-        </li>
-        <li class="tecnologia__item">
-          <img class="tecnologia__imagem" src="assets/images/image-top-laptops.jpg" alt>
-          <div>
-            <h3>Top 10 Laptops of 2022</h3>
-            <p class="tecnologia__texto">
-              Our beast picks for various needs and budgets
-            </p>
-          </div>
-        </li>
-        <li class="tecnologia__item">
-          <img class="tecnologia__imagem" src="assets/images/image-gaming-growth.jpg" alt>
-          <div>
-            <h3>The Growth of Gaming</h3>
-            <p class="tecnologia__texto">
-              How the pandemic has sparked fresh opportunities
-            </p>
-          </div>
-        </li>
-      </ul>
-    </section>
+      </section>
+    </div>
   </main>
-
+  <footer class="bg-light text-center">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Daniel Marcos Pires</a>.
+    </div> 
+    
+  </footer>
   
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 

@@ -5,9 +5,28 @@
     display: flex;
     flex-direction: column;
 }
+.barra__lateral--desktop{
+    display: none;
+}
+@media screen and (min-width:600px) {
+    .barra__lateral--desktop{
+        display: flex;
+        align-items: center;
+    }
+    .barra__lateral--mobile{
+        display: none;
+    }
+}
 .lateral__link{
     font-size: 1.2em;
     margin: 8px 3px;
+}
+.lateral__link--desktop{
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+.lateral__link:hover,.lateral__link--desktop:hover{
+    color: var(--vermelho);
 }
 .lateral__link i{
     margin: 0 8px;

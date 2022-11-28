@@ -1,0 +1,33 @@
+.main__grid{
+}
+.grid__desktop--ajuste{
+}
+@media screen and (min-width:600px){
+    .main__grid{
+        display: grid;
+        grid-template: 
+        "picture   picture   card"
+        "article   article   card"
+        "tecnology tecnology tecnology";
+    }
+    .picture{
+        grid-area: picture;
+    }
+    .artigo{
+        display: flex;
+        grid-area: article;
+    }
+    .grid__desktop--ajuste{
+        display: block;
+        width: 75%;
+    }
+    .novidade{
+        grid-area: card;
+    }
+    .tecnologia{
+        grid-area: tecnology;
+    }
+    .tecnologia__lista{
+        display: flex;
+    }
+}

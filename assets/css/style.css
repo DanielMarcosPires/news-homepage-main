@@ -1,4 +1,5 @@
 @import url('../../style/header/style.css');
+@import url('../../style/main/grid/style.css');
 @import url('../../style/main/images/style.css');
 @import url('../../style/main/article/style.css');
 @import url('../../style/main/novidade/style.css');
@@ -9,6 +10,13 @@ a{
 }
 li{
     list-style: none;
+}
+main{
+    margin: 0 auto;
+    width: 95%;
+}
+footer{
+    padding: 1.5em 0;
 }
 :root{
     --preto:#000;
